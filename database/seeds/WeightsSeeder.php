@@ -23,7 +23,8 @@ class WeightsSeeder extends Seeder
         for ($i = 0; $i < 200; $i++) {
             Weights::create([
                 'weight' => $faker->randomFloat(2, 65.21, 84.67),
-                'timestamp' =>Carbon::now()->timestamp,
+                // 'timestamp' =>Carbon::now()->timestamp,
+                'timestamp' => mt_rand(1577836800, 1591567113) // 01/01/2020 - 06/07/2020
             ]);
         }
     }
