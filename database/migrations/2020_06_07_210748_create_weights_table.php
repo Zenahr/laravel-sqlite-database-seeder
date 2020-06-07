@@ -17,6 +17,7 @@ class CreateWeightsTable extends Migration
             $table->id();
             $table->decimal('weight', 5, 2); // Example: 110.82
             $table->timestamp('timestamp');
+            $table->timestamps();
         });
     }
 
